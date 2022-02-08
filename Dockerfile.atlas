@@ -20,7 +20,7 @@
 # df4724d Dockerfile.base w/ Deb11 + apt update +  R_HOME etc ENV ... got R 4.0.4, apollo, tidyverse, and R loads in Mint(U16.04), so testing atlas 1.0.2dcf  2022.0406
 # d785134 Dockerfile.base direct R 412 + apt update + R_HOME etc ENV #0206.  Rscript did not work, add PATH ENV didn't help, so rebuild after a new atlas:base is back to ubuntu 21.04.  here R works, but not Rscript, cuz test -x /usr/lib/R returns 1 :-\
 # 3e1332b Debian bullseye (11) no PATH R 4.0.4
-FROM ghcr.io/lbnl-science-it/atlas:base
+FROM ghcr.io/lbnl-science-it/atlas:vBase1.0.4
 
 # FROM tin6150/atlas:base   # 2022.0204 is now a "locked r-base:4.1.1 with no apt update, R work on aws/ubuntu 16.04, but unsure about tidyverse (yes on apollo)"
 #FROM tin6150/atlas:base
